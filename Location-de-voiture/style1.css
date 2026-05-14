@@ -1,0 +1,135 @@
+body {
+  font-family: var(--bs-font-sans-serif);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+  margin: 0;
+  background-image: url(image/carblue.jpg);
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center center;
+}
+
+.wrapper {
+  text-align: center;
+  max-width: 400px; /* Ajustez la largeur maximale selon vos besoins */
+  margin: auto;
+  padding: 20px;
+  background-color: #dae3ff;
+  border: 2px solid var(--bs-primary);
+  border-radius: var(--bs-border-radius);
+}
+
+h2 {
+  color: var(--bs-primary);
+  text-align: center;
+}
+
+.form-group {
+  margin-bottom: 20px;
+  text-align: left;
+}
+
+label {
+  display: block;
+  font-weight: bold;
+  color: var(--bs-secondary);
+}
+
+input[type="text"],
+input[type="password"] {
+  width: 100%;
+  padding: 10px;
+  margin-bottom: 10px;
+  border: 1px solid var(--bs-gray-300);
+  border-radius: var(--bs-border-radius);
+}
+
+/* Ajout de la classe has-error pour les champs en erreur */
+.form-group.has-error input[type="text"],
+.form-group.has-error input[type="password"] {
+  border-color: red;
+}
+
+.error-message {
+  color: red;
+  font-size: 14px;
+  margin-top: 5px;
+}
+
+.btn-primary {
+  background-color: var(--bs-primary);
+  color: var(--bs-light);
+  padding: 10px 20px;
+  border: none;
+  border-radius: var(--bs-border-radius);
+  cursor: pointer;
+  margin-bottom: 10px;
+}
+
+.btn-primary:hover {
+  background-color: var(--bs-primary-dark); /* Remplacez par la couleur de fond souhaitée au survol */
+}
+@media only screen and (max-width: 600px) {
+  .wrapper {
+    max-width: 90%;
+  }
+
+  h2 {
+    font-size: 18px;
+  }
+
+  input[type="text"],
+  input[type="password"] {
+    font-size: 14px;
+  }
+
+  .btn-primary {
+    font-size: 16px;
+  }
+}
+
+@media only screen and (max-width: 400px) {
+  .wrapper {
+    padding: 15px;
+  }
+
+  h2 {
+    font-size: 16px;
+  }
+
+  input[type="text"],
+  input[type="password"] {
+    font-size: 12px;
+  }
+
+  .btn-primary {
+    font-size: 14px;
+  }
+}
+/* Ajout de la classe has-error pour les champs en erreur */
+.form-group.has-error input[type="text"],
+.form-group.has-error input[type="password"] {
+  border-color: red;
+}
+
+.error-message {
+  color: red;
+  font-size: 14px;
+  margin-top: 5px;
+}
+
+.btn-primary {
+  background-color: var(--bs-primary);
+  color: var(--bs-light);
+  padding: 10px 20px;
+  border: none;
+  border-radius: var(--bs-border-radius);
+  cursor: pointer;
+  margin-bottom: 10px;
+}
+
+.btn-primary:hover {
+  background-color: var(--bs-primary-dark); /* Remplacez par la couleur de fond souhaitée au survol */
+}

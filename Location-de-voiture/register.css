@@ -1,0 +1,107 @@
+
+body {
+    font-family: var(--bs-font-sans-serif);
+    display : flex;
+    align-items: center;
+    justify-content: center;
+    height: 100vh;
+    margin: 0;
+    background-image: url(image/carblue.jpg);
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center center;
+  }
+  
+  .wrapper {
+    max-width: 400px;
+    padding: 20px;
+    border: 2px solid var(--bs-primary); /* Couleur de la bordure du rectangle */
+    border-radius: var(--bs-border-radius); /* Rayon de la bordure du rectangle */
+    background-color: #dae3ff;
+    box-shadow: var(--bs-box-shadow); /* Ombre pour donner une profondeur */
+  }
+  
+  h2 {
+    color: var(--bs-primary);
+    text-align: center;
+  }
+  
+  .form-group {
+    margin-bottom: 20px;
+  }
+  
+  label {
+    display: block;
+    font-weight: bold;
+    color: var(--bs-secondary);
+  }
+  
+  input[type="text"],
+  input[type="email"],
+  input[type="password"] {
+    width: 100%;
+    padding: 10px;
+    margin-bottom: 10px;
+    border: 1px solid var(--bs-gray-300);
+    border-radius: var(--bs-border-radius);
+  }
+  
+  span {
+    color: var(--bs-danger);
+    font-size: 14px;
+  }
+  
+  .btn-primary {
+    background-color: var(--bs-primary);
+    color: var(--bs-light);
+    padding: 10px 20px;
+    border: none;
+    border-radius: var(--bs-border-radius);
+    cursor: pointer;
+  }
+  
+  .btn-primary:hover {
+    background-color: var(--bs-primary-rgb);
+    color : var(--bs-primary)
+  }
+  
+  /*responsive*/
+  @media only screen and (max-width: 600px) {
+    .wrapper {
+        max-width: 90%;
+    }
+
+    h2 {
+        font-size: 18px;
+    }
+
+    input[type="text"],
+    input[type="email"],
+    input[type="password"] {
+        font-size: 14px;
+    }
+
+    .btn-primary {
+        font-size: 16px;
+    }
+}
+
+@media only screen and (max-width: 400px) {
+    .wrapper {
+        padding: 15px;
+    }
+
+    h2 {
+        font-size: 16px;
+    }
+
+    input[type="text"],
+    input[type="email"],
+    input[type="password"] {
+        font-size: 12px;
+    }
+
+    .btn-primary {
+        font-size: 14px;
+    }
+}

@@ -1,0 +1,99 @@
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    background-image: url(../image/fond_bleu.jpg);
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center center;
+}
+
+.container {
+    max-width: 1080px;
+    margin: 10% auto; /* Ajustement de la marge pour la réactivité */
+    background-color: #dae3ff;
+    padding: 25px;
+    border-radius: 8px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+
+h2 {
+    color: #007bff;
+}
+
+a {
+    text-decoration: none;
+    color: #007bff;
+    margin-right: 15px; /* Espacement entre les liens */
+}
+
+a:hover {
+    text-decoration: underline;
+}
+
+.table {
+    width: 100%;
+    border-collapse: collapse;
+    margin-top: 5%; /* Ajustement de la marge supérieure pour la réactivité */
+    margin-bottom: 5%;
+}
+
+.table th,
+.table td {
+    border: 1px solid #ddd;
+    padding: 10px;
+    text-align: center;
+}
+
+.table th {
+    background-color: #007bff;
+    color: #fff;
+}
+
+.table td {
+    background-color: #f8f9fa;
+}
+
+.table a {
+    color: #007bff;
+    margin-right: 5px; /* Espacement entre les liens dans le tableau */
+}
+
+.table a:hover {
+    text-decoration: underline;
+}
+
+.btn-add {
+    display: block;
+    background-color: #007bff;
+    color: #fff;
+    padding: 10px 20px;
+    text-align: center;
+    text-decoration: none;
+    border-radius: 4px;
+    margin-top: 5%; /* Ajustement de la marge supérieure pour la réactivité */
+}
+
+.btn-add:hover {
+    background-color: #0056b3;
+}
+
+/* Styles de réactivité ajoutés */
+@media only screen and (max-width: 768px) {
+    .container {
+        margin: 20% auto;
+    }
+
+    .table {
+        margin-top: 10%;
+        margin-bottom: 10%;
+    }
+
+    .btn-add {
+        margin-top: 10%;
+    }
+    
+    .table th,
+    .table td {
+        font-size: 12px; /* Ajustement de la taille de police pour la réactivité */
+    }
+}

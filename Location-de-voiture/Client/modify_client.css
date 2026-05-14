@@ -1,0 +1,109 @@
+
+
+body {
+    font-family: Arial, sans-serif;
+    background-color: #f8f9fa;
+    margin: 0;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 100vh;
+}
+
+.container {
+    max-width: 800px;
+    margin: 50px auto;
+    background-color: #dae3ff;
+    padding: 20px;
+    border-radius: 8px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+
+h2 {
+    color: #007bff;
+}
+
+.form-group {
+    margin-bottom: 20px;
+}
+
+label {
+    display: block;
+    font-weight: bold;
+    color: #495057;
+    margin-top: 10px;
+}
+
+input[type="text"] {
+    width: 100%;
+    padding: 10px;
+    margin-bottom: 10px;
+    border: 1px solid #ced4da;
+    border-radius: 4px;
+    box-sizing: border-box; /* Correction de la taille du champ de saisie */
+}
+
+/* Amélioration des styles des champs de saisie au focus */
+input[type="text"]:focus {
+    outline: none; /* Supprime la bordure lorsqu'il est en focus */
+    border-color: #007bff; /* Change la couleur de la bordure */
+    box-shadow: 0 0 5px rgba(0, 123, 255, 0.5); /* Ajoute une légère ombre au focus */
+}
+input[type="email"],
+input[type="tel"] {
+    width: 100%;
+    padding: 10px;
+    margin-bottom: 10px;
+    border: 1px solid #ced4da;
+    border-radius: 4px;
+    box-sizing: border-box;
+    /* Ajoutez les styles nécessaires pour les champs d'email et de téléphone */
+}
+
+.btn-primary {
+    background-color: #007bff;
+    color: #fff;
+    padding: 10px 20px;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+}
+
+.btn-primary:hover {
+    background-color: #0056b3;
+}
+
+.error-message {
+    color: #dc3545; /* Couleur rouge */
+    font-size: 14px;
+    margin-top: 5px;
+}
+@media (max-width: 768px) {
+    body {
+      justify-content: flex-start; /* Center content vertically on smaller screens */
+    }
+  
+    .container {
+      max-width: 100%; /* Allow container to fill the width on smaller screens */
+      padding: 15px; /* Adjust padding for better spacing on smaller screens */
+    }
+  
+    h2 {
+      font-size: 1.25rem; /* Adjust heading size for better readability */
+    }
+  
+    label {
+      font-size: 0.875rem; /* Adjust label size for better readability */
+    }
+  
+    input[type="text"],
+    input[type="email"],
+    input[type="tel"] {
+      font-size: 0.9rem; /* Adjust input field size for better readability */
+    }
+  
+    .btn-primary {
+      font-size: 0.9rem; /* Adjust button size for better readability */
+      padding: 8px 15px; /* Adjust button padding for better proportions */
+    }
+  }

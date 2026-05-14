@@ -1,0 +1,96 @@
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    background-image: url(../image/103969-resume-de-l-arriere-plan-de-l-arriere-plan-bleu-vectoriel.jpg);
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center center;
+}
+
+.container {
+    max-width: 1080px;
+    margin: 5% auto; /* Ajustez la marge pour l'adapter à votre mise en page */
+    background-color: #dae3ff;
+    padding: 20px;
+    border-radius: 8px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+
+h2 {
+    color: #007bff;
+}
+
+a {
+    text-decoration: none;
+    color: #007bff;
+    margin-right: 15px; /* Espacement entre les liens */
+}
+
+a:hover {
+    text-decoration: underline;
+}
+
+.table {
+    width: 100%;
+    border-collapse: collapse;
+    margin-top: 5%; /* Espacement entre le titre et le tableau */
+}
+
+.table th, .table td {
+    border: 1px solid #ddd;
+    padding: 10px;
+    text-align: center;
+}
+
+.table th {
+    background-color: #007bff;
+    color: #fff;
+}
+
+.table td {
+    background-color: #f8f9fa;
+}
+
+.table img {
+    width: 100px;
+    height: auto;
+}
+
+.table a {
+    color: #007bff;
+    margin-right: 5px; /* Espacement entre les liens dans le tableau */
+}
+
+.table a:hover {
+    text-decoration: underline;
+}
+
+.btn-add {
+    display: block;
+    background-color: #007bff;
+    color: #fff;
+    padding: 10px 20px;
+    text-align: center;
+    text-decoration: none;
+    border-radius: 4px;
+    margin-top: 5%; /* Espacement entre le tableau et le lien d'ajout */
+}
+
+.btn-add:hover {
+    background-color: #0056b3;
+}
+
+/* Styles de réactivité ajoutés */
+@media only screen and (max-width: 768px) {
+    .container {
+        margin: 10px;
+    }
+
+    .table {
+        margin-top: 10%; /* Ajustez l'espacement entre le titre et le tableau */
+    }
+
+    .btn-add {
+        margin-top: 10%; /* Ajustez l'espacement entre le tableau et le lien d'ajout */
+    }
+}
